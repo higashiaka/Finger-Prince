@@ -1,0 +1,24 @@
+{
+  "name": "finger-prince",
+  "version": "0.1.0",
+  "private": true,
+  "description": "👑 핑거 프린스 — AI-powered Korean community semantic search",
+  "workspaces": [
+    "apps/electron",
+    "apps/web",
+    "apps/shared",
+    "packages/tailwind-config",
+    "packages/typescript-config"
+  ],
+  "scripts": {
+    "dev:web": "npm run dev --workspace=apps/web",
+    "dev:electron": "npm run dev --workspace=apps/electron",
+    "build:web": "npm run build --workspace=apps/web",
+    "build:electron": "npm run build --workspace=apps/electron",
+    "typecheck": "tsc --noEmit -p apps/shared/tsconfig.json && tsc --noEmit -p apps/web/tsconfig.json && tsc --noEmit -p apps/electron/tsconfig.json"
+  },
+  "engines": {
+    "node": ">=20.0.0",
+    "npm": ">=10.0.0"
+  }
+}
