@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: "Nanum Gothic", "나눔고딕", "Apple SD Gothic Neo", "Malgun Gothic",
+      "맑은 고딕", system-ui, sans-serif;
+    background-color: #1a1a2e;
+    color: #e0e0e0;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  /* Scrollbar — DC dark style */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #1a1a2e;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #0f3460;
+    border-radius: 3px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #e8c300;
+  }
+}

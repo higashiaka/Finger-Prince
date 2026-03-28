@@ -1,0 +1,11 @@
+{
+  "extends": "@finger-prince/typescript-config/base.json",
+  "include": ["main", "preload", "python-bridge"],
+  "compilerOptions": {
+    "module": "CommonJS",
+    "moduleResolution": "Node",
+    "outDir": "dist",
+    "target": "ES2022",
+    "lib": ["ES2022"]
+  }
+}

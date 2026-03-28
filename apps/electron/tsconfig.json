@@ -1,0 +1,10 @@
+{
+  "extends": "@finger-prince/typescript-config/react.json",
+  "include": ["renderer"],
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@shared/*": ["../shared/*"]
+    }
+  }
+}
